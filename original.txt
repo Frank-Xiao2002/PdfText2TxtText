@@ -1,0 +1,39 @@
+Dynamically linked libraries (DLLs) are system libraries that are linked to user
+programswhen the programs are run (refer back to Figure 9.3). Some operating
+systems support only static linking, in which system libraries are treated
+like any other object module and are combined by the loader into the binary
+program image. Dynamic linking, in contrast, is similar to dynamic loading.
+Here, though, linking, rather than loading, is postponed until execution time.
+This feature is usually used with system libraries, such as the standard C
+language library.Without this facility, each program on a system must include a
+copy of its language library (or at least the routines referenced by the program)
+in the executable image. This requirement not only increases the size of an
+executable image but also may waste main memory. A second advantage of
+DLLs is that these libraries can be shared among multiple processes, so that
+only one instance of the DLL in main memory. For this reason, DLLs are also
+known as shared libraries, and are used extensively in Windows and Linux
+systems.
+When a program references a routine that is in a dynamic library, the loader
+locates the DLL, loading it into memory if necessary. It then adjusts addresses
+that reference functions in the dynamic library to the location in memorywhere
+the DLL is stored.
+Dynamically linked libraries can be extended to library updates (such as
+bug fixes). In addition, a library may be replaced by a new version, and all
+programs that reference the library will automatically use the new version.
+Without dynamic linking, all such programs would need to be relinked to gain
+access to the new library. So that programs will not accidentally execute new,
+incompatible versions of libraries, version information is included in both the
+program and the library. More than one version of a library may be loaded
+into memory, and each program uses its version information to decide which
+copy of the library to use. Versions with minor changes retain the same version
+number, whereas versions with major changes increment the number. Thus,
+only programs that are compiled with the new library version are affected by
+any incompatible changes incorporated in it. Other programs linked before the
+new library was installed will continue using the older library.
+Unlike dynamic loading, dynamic linking and shared libraries generally
+require help from the operating system. If the processes in memory are protected
+from one another, then the operating system is the only entity that can
+check to see whether the needed routine is in another process’s memory space
+or that can allow multiple processes to access the same memory addresses.
+We elaborate on this concept, as well as how DLLs can be shared by multiple
+processes, when we discuss paging in Section 9.3.4.
