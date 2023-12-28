@@ -14,6 +14,8 @@ new line character so that you can paste to any place you want.
 
 ## Usage
 
+- Prepare java runtime environment and an IDE for java like [Intellij IDEA](https://www.jetbrains.com/idea/). 
+- Download the project and import to java IDEs.
 - Use Ctrl+C to copy text to file _original.txt_, run the program, check out the _output.txt_
 - If you want to start a new paragraph, press Enter before the first word of the paragraph by yourself first in the
   _original.txt_, and the program will keep the new line for you.
