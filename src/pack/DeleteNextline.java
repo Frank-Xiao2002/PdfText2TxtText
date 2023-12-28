@@ -19,8 +19,6 @@ public class DeleteNextline {
                 if (buf2 == 13) {
                     //noinspection ResultOfMethodCallIgnored
                     fileReader.read();
-                    //noinspection ResultOfMethodCallIgnored
-                    fileReader.read();
                     fileWriter.write("\n\n");
                 } else {
                     fileWriter.write(32);
