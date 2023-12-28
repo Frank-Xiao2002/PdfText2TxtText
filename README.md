@@ -14,10 +14,10 @@ new line character so that you can paste to any place you want.
 
 ## Usage
 
-- Prepare java runtime environment and an IDE for java like [Intellij IDEA](https://www.jetbrains.com/idea/). 
-- Download the project and import to java IDEs.
-- Use Ctrl+C to copy text to file _original.txt_, run the program, check out the _output.txt_
-- If you want to start a new paragraph, press Enter before the first word of the paragraph by yourself first in the
+1. Prepare java runtime environment and an IDE for java like [Intellij IDEA](https://www.jetbrains.com/idea/). 
+2. Download the project and import to java IDEs.
+3. Use Ctrl+C to copy text to file _original.txt_, run the program, check out the _output.txt_
+4. If you want to start a new paragraph, press Enter before the first word of the paragraph by yourself first in the
   _original.txt_, and the program will keep the new line for you.
 
 ## Example
