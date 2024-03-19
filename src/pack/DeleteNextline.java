@@ -13,7 +13,7 @@ public class DeleteNextline {
         int buf, buf2;
         /*13 represents \r, 10 represents \n, read out order is 13,10*/
         while ((buf = fileReader.read()) != -1) {
-            System.out.print((char) buf);
+//            System.out.print((char) buf);
             if (buf == 10) {
                 buf2 = fileReader.read();
                 if (buf2 == 13) {
