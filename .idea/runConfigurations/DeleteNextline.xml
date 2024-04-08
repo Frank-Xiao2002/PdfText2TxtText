@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="DeleteNextline" type="Application" factoryName="Application" nameIsGenerated="true">
+  <configuration default="false" name="DeleteNextline" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="pack.DeleteNextline" />
     <module name="PdfText2TxtText" />
     <extension name="coverage">
