@@ -1,24 +1,35 @@
-# PdfText2TxtText
+# PdfText2NormalText
 
 * Creator: Frank_Xiao
 * Time: 2023/12
+* Update Time: 2024/4
 
 ---
 
 ## Origin
 
+![copy text from pdf file](./res/copy_from_pdf.png "copy from pdf")
+
 When you want to copy a text from a pdf file, the pdf often generates redundant '\r\n' (in Windows) at the end of each
 line causing troubles to paste on online translation like [Google Translate](https://translate.google.com/) or paste in
-a Word document. Don't worry, with the help of this simple java program, you can easily get texts without unnecessary
+a Word document.
+
+![annoying line breaks!](./res/problem_translate.google.com.jpeg "annoying line breaks")
+
+**Don't worry**, with the help of this simple java program, you can easily get texts without unnecessary
 new line character so that you can paste to any place you want.
 
 ## Usage
 
-1. Prepare java runtime environment and an IDE for java like [Intellij IDEA](https://www.jetbrains.com/idea/). 
+1. Prepare java runtime environment and an IDE for java like [Intellij IDEA](https://www.jetbrains.com/idea/).
 2. Download the project and import to java IDEs.
-3. Use Ctrl+C to copy text to file _original.txt_, run the program, check out the _output.txt_
-4. If you want to start a new paragraph, press Enter before the first word of the paragraph by yourself first in the
-  _original.txt_, and the program will keep the new line for you.
+   ![copy to original.txt](./res/copy_to_original_txt.png)
+3. **Copy text to file _original.txt_, run the program, check out the _output.txt_**
+   ![run and get result](./res/run_get_result.png)
+5. If you want to start a new paragraph, add a new line before the starting line by yourself in
+   _original.txt_, and the program will keep the new line for you.
+6. Copy the text from output.txt to any place you want.
+   ![enjoy!](./res/enjoy.jpeg)
 
 ## Example
 
